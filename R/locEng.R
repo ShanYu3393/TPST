@@ -2,24 +2,13 @@
 #'
 #' This function computes the local
 #' energy matrix with respect to the triangle \code{(V1,V2,V3)}.
- #' @param V1,V2,V3
+#' @param V1,V2,V3
 #' three vectors of length two indicating the vertices locations of a triangle.
-#' @param Mat inner coeffients matrix. This arguments could be
+#' @param Mat inner coefficients matrix. This arguments could be
 #' calculated by function \code{build}.
 #' @param d degree of polynomials.
 #' @return energy matrix with respect to the triangle \code{(V1,V2,V3)}.
-#' @examples
-#' V1=c(-0.1,-0.1)
-#'V2=c(0.5,-0.1)
-#'V3=c(-0.1,0.5)
-#'d=2
-#'Mat=build(d)
-#'locEng(V1,V2,V3,Mat,d)
 #' @export
-
-#source('tcord.R')
-#source('dirder.R')#' Calculate local energy matrix
-#'
 #' This function computes the local
 #' energy matrix with respect to the triangle \code{(V1,V2,V3)}.
 #' @param V1,V2,V3
@@ -28,18 +17,6 @@
 #' calculated by function \code{build}.
 #' @param d degree of polynomials.
 #' @return energy matrix with respect to the triangle \code{(V1,V2,V3)}.
-#' @examples
-#' V1 <- c(-0.1, -0.1)
-#' V2 <- c(0.5, -0.1)
-#' V3 <- c(-0.1, 0.5)
-#' d <- 2
-#' Mat <- build(d)
-#' locEng(V1, V2, V3, Mat, d)
-#' @export
-
-# source('tcord.R')
-# source('dirder.R')
-# source('triarea.R')
 locEng <- function(V1, V2, V3, Mat, d) {
   Mat <- as.matrix(Mat)
   m <- (d + 1) * (d + 2) / 2

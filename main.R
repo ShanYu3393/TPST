@@ -17,10 +17,10 @@ Data=data.frame(x=rep(ss[,1],ngrid.t),y=rep(ss[,2],ngrid.t),
 knots=c(0.2,0.4,0.6,0.8)
 Boundary.knots=c(0,1)
 
-library(BPST)
-library(splines2)
-library(MGLM)
-library(Matrix)
+# library(BPST)
+# library(splines2)
+# library(MGLM)
+# library(Matrix)
 library(TPST)
 d <- 2
 r <- 1
